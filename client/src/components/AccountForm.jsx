@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import Loader from "react-loaders";
 
+require("../assets/styles/_theme.scss");
+require("../assets/styles/_loaders.scss");
+
 class AccountForm extends Component {
   constructor(props) {
     super(props)
