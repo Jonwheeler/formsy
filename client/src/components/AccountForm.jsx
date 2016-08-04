@@ -1,9 +1,6 @@
 import React, { Component } from "react";
 import Loader from "react-loaders";
 
-require("../assets/styles/_theme.scss");
-require("../assets/styles/_loaders.scss");
-
 class AccountForm extends Component {
   constructor(props) {
     super(props)
@@ -50,24 +47,25 @@ class AccountForm extends Component {
 
     return(
       <form onSubmit = { (e) => this.submitForm(e) } >
-        <div className="form-group">
-          <label for="job-number">Job Number</label>
-          <input type="text" className="form-control" id="job-number" placeholder="Job Number" onChange = { (e) => this.setState({ jobNumber: e.target.value.trim() }) } />
+        <label for="job-number" className="label">Job Number</label>
+        <div className="control">
+          <input type="text" className="input" id="job-number" placeholder="Job Number" onChange = { (e) => this.setState({ jobNumber: e.target.value.trim() }) } />
         </div>
-        <div className="form-group">
-          <label for="job-title">Job Title</label>
-          <input type="text" className="form-control" id="job-title" placeholder="Job Title" onChange = { (e) => this.setState({ jobTitle: e.target.value.trim() }) }/>
+        <label for="job-title">Job Title</label>
+        <div className="control">
+          <input type="text" className="input" id="job-title" placeholder="Job Title" onChange = { (e) => this.setState({ jobTitle: e.target.value.trim() }) }/>
         </div>
-        <div className="form-group">
-          <label for="job-title">Job Title</label>
-          <textarea className="form-control" id="job-description" placeholder="Job Description" onChange = { (e) => this.setState({ jobDescription: e.target.value.trim() }) }/>
+        <label for="job-title" className="label">Job Title</label>
+        <div className="control">
+          <textarea className="textarea" id="job-description" placeholder="Job Description" onChange = { (e) => this.setState({ jobDescription: e.target.value.trim() }) }/>
         </div>
-        <div className="checkbox">
-          <label>
+
+        <div className="control">
+          <label className="checkbox">
             <input type="checkbox" onChange = { (e) => this.setState({ confirm: !this.state.confirm }) } /> Confirm Data
           </label>
         </div>
-        <button type="submit" className="btn btn-default">Submit</button>
+        <button type="submit" className="button is-primary">Submit</button>
       </form>
     )
   }
@@ -92,18 +90,22 @@ class AccountForm extends Component {
   renderCompleted() {
     let response;
     if ( this.props.response ) {
+      let { jobTitle, jobNumber, jobDescription, confirm } = this.props.response;
       response = (
-        <pre>
-          { JSON.stringify(this.props.response) }
-        </pre>
+        <ul className="response-data">
+          <li><strong> Job Number: </strong> { jobNumber }</li>
+          <li><strong> Job Title: </strong> { jobTitle }</li>
+          <li><strong> Job Description: </strong> { jobDescription }</li>
+          <li><strong> Confirmed: </strong> { confirm ? "Yes" : "No"  }</li>
+        </ul>
       ) 
     };
 
     return(
-      <section className="completed">
+      <div className="completed">
         <h1>Thank you for completing your form</h1>
         { response }
-      </section>
+      </div>
     )
   }
 }

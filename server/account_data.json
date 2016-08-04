@@ -6,15 +6,15 @@
     "accountID":   "1234485",
     "completed":   false
   },
-  "5678Bar": {
-    "id":          "5678Bar",
+  "5678bar": {
+    "id":          "5678bar",
     "name":        "Jane Doe",
     "companyName": "Le Poir Coal",
     "accountID":   "5984759",
     "completed": false
   },
-  "1234Done": {
-    "id":          "1234Done",
+  "1234done": {
+    "id":          "1234done",
     "name":        "Bill Jenkins",
     "companyName": "Total Tires",
     "accountID":   "509305",
