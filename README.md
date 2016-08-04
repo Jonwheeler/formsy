@@ -35,7 +35,7 @@ Client should be running on port 8080.
 Open the browser at localhost:8080, if the app is running successfully you 
 should see.
 
-![Alt text]("https://www.dl.dropboxusercontent.com/s/l894p9w5mutq1cw/invalid_token.png?raw=1")
+![Alt text](https://dl.dropboxusercontent.com/s/l894p9w5mutq1cw/invalid_token.png)
 
 The app expects a token to passed in the query string for example:
 
@@ -52,18 +52,18 @@ Valid tokens for this prototype are:
 If the token is accepted by the server you will see some account information 
 sent from the server, and a form:
 
-![Alt text]("https://www.dl.dropboxusercontent.com/s/kv6l4rjrf03n6wf/form.png?raw=1")
+![Alt text](https://dl.dropboxusercontent.com/s/kv6l4rjrf03n6wf/form.png)
 
 If the token has already completed the form then a simple thank you message is 
 displayed instead:
 
-![Alt text]("https://www.dl.dropboxusercontent.com/s/smelb75jsqrw6uz/prev_done.png?raw=1")
+![Alt text](https://dl.dropboxusercontent.com/s/smelb75jsqrw6uz/prev_done.png)
 
 Fill out the form and hit submit, the form data is sent to the server. For demo
 purposed the server simply marks the form as completed and displays the thank 
 you message a long with the data that was submitted in the form.
 
-![Alt text]("https://www.dl.dropboxusercontent.com/s/c69u0qmmvaypehl/done.png?raw=1")
+![Alt text](https://dl.dropboxusercontent.com/s/c69u0qmmvaypehl/done.png)
 
 These form submissions are not persisted so next time you refresh the page it 
 will no longer be marked complete.
