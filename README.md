@@ -35,7 +35,7 @@ Client should be running on port 8080.
 Open the browser at localhost:8080, if the app is running successfully you 
 should see.
 
-![Invalid token]("https://photos-2.dropbox.com/t/2/AABdzo53J0_i_qtpEedo5FLsqVO8i97yvEvOkNKiaGZw_w/12/125280565/png/32x32/1/_/1/2/invalid_token.png/EJ-4vWAYzX8gBygH/brKF8KY1uzwTlwUjtyIOx4B6GpZkBGlRzyapyHQM3VI?dl=0&size=1600x1200&size_mode=3" "Invalid token")
+![Invalid token]("https://photos-2.dropbox.com/t/2/AABdzo53J0_i_qtpEedo5FLsqVO8i97yvEvOkNKiaGZw_w/12/125280565/png/32x32/1/_/1/2/invalid_token.png/EJ-4vWAYzX8gBygH/brKF8KY1uzwTlwUjtyIOx4B6GpZkBGlRzyapyHQM3VI?dl=0&size=1600x1200&size_mode=2")
 
 The app expects a token to passed in the query string for example:
 
